@@ -1,3 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
 
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  justify-content: space-between;
+  padding-top: 28px;
+  height: 80px;
+}
+@media only screen and (max-width: 780px) {
+  .navigation-bar {
+    padding-top: 12px;
+  }
+}
+.navigation-bar__logo {
+  margin-left: 171px;
+  width: 148px;
+  height: 25px;
+  position: relative;
+  top: 2px;
+}
+@media only screen and (max-width: 1030px) {
+  .navigation-bar__logo {
+    margin-left: 110px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .navigation-bar__logo {
+    margin-left: 60px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .navigation-bar__logo {
+    margin-left: 32px;
+  }
+}
+.navigation-bar__menu {
+  margin-right: 165px;
+}
+@media only screen and (max-width: 1030px) {
+  .navigation-bar__menu {
+    margin-right: 110px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .navigation-bar__menu {
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .navigation-bar__menu {
+    display: none;
+  }
+}
+.navigation-bar__menu-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.navigation-bar__menu-list-element {
+  margin-left: 46px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.navigation-bar__menu-list-element a {
+  color: hsl(229, 31%, 21%);
+  text-decoration: none;
+}
+.navigation-bar__menu-list-element a:hover {
+  color: hsl(0, 94%, 66%);
+}
+.navigation-bar__menu-list-element-button {
+  background-color: hsl(0, 94%, 66%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 110px;
+  font-weight: 500;
+}
+.navigation-bar__menu-list-element-button:hover {
+  border: 2px solid hsl(0, 94%, 66%);
+  background-color: white;
+  color: hsl(0, 94%, 66%);
+}
+.navigation-bar__menu-list-element,
+.navigation-bar__menu-list .navigation-bar__menu-list-element-button {
+  cursor: pointer;
+}
+.navigation-bar__menu-list-element:nth-child(1) {
+  margin-left: 0;
+}
+.navigation-bar__menu-list-element:nth-child(2) {
+  margin-left: 43px;
+}
+.navigation-bar__menu-list-element:nth-child(4) {
+  margin-left: 48px;
+}
+
+.navigation-bar,
+.navigation-bar__menu-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 /*# sourceMappingURL=NavigationBar.css.map */

@@ -1,0 +1,112 @@
+@import '../../../utils/settings';
+
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  justify-content: space-between;
+  padding-top: 28px;
+  height: 80px;
+
+  @media only screen and (max-width: 780px) {
+    padding-top: 12px;
+  }
+
+  &__logo {
+    margin-left: 171px;
+    width: 148px;
+    height: 25px;
+    position: relative;
+    top: 2px;
+
+    @media only screen and (max-width: 1030px) {
+      margin-left: 110px;
+    }
+
+    @media only screen and (max-width: 940px) {
+      margin-left: 60px;
+    }
+
+    @media only screen and (max-width: 780px) {
+      margin-left: 32px;
+    }
+  }
+
+  &__menu {
+    margin-right: 165px;
+
+    @media only screen and (max-width: 1030px) {
+      margin-right: 110px;
+    }
+
+    @media only screen and (max-width: 940px) {
+      margin-right: 60px;
+    }
+
+    @media only screen and (max-width: 780px) {
+      display: none;
+    }
+
+    &-list {
+      list-style-type: none;
+      padding-left: 0;
+
+      &-element {
+        margin-left: 46px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        a {
+          color: $dark-blue;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $primary-red;
+        }
+
+        &-button {
+          background-color: $primary-red;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          height: 40px;
+          width: 110px;
+          font-weight: 500;
+        }
+
+        &-button:hover {
+          border: 2px solid $primary-red;
+          background-color: white;
+          color: $primary-red;
+        }
+      }
+
+      &-element,
+      .navigation-bar__menu-list-element-button {
+        cursor: pointer;
+      }
+
+      &-element:nth-child(1) {
+        margin-left: 0;
+      }
+
+      &-element:nth-child(2) {
+        margin-left: 43px;
+      }
+
+      &-element:nth-child(4) {
+        margin-left: 48px;
+      }
+    }
+  }
+}
+
+.navigation-bar,
+.navigation-bar__menu-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

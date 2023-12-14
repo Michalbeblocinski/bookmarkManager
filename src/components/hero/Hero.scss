@@ -1,0 +1,166 @@
+@import '../../../utils/settings';
+
+.landing-page__hero {
+  margin-top: 108px;
+  position: relative;
+
+  &-info {
+    width: 500px;
+    margin: 274px 0 0 calc(50vw - 555px);
+
+    @media only screen and (max-width: 1300px) {
+      margin: 274px 0 0 150px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      margin: 274px 0 0 120px;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      margin: 274px 0 0 80px;
+    }
+
+    @media only screen and (max-width: 780px) {
+      padding-top: 148px;
+    }
+
+    h1 {
+      color: $dark-blue;
+      font-size: 48px;
+      line-height: 50px;
+      margin-bottom: 26px;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 38px;
+      }
+
+      @media only screen and (max-width: 830px) {
+        font-size: 32px;
+      }
+
+      @media only screen and (max-width: 780px) {
+        margin-top: 11px;
+      }
+    }
+
+    p {
+      color: $gray;
+      line-height: 28px;
+      margin-bottom: 33px;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 16px;
+      }
+
+      @media only screen and (max-width: 830px) {
+        font-size: 14px;
+      }
+    }
+
+    &-buttons {
+      &-button {
+        border: none;
+        border-radius: 5px;
+        height: 48px;
+        width: 165px;
+        font-weight: 600;
+        -moz-box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+        letter-spacing: 1px;
+
+        @media only screen and (max-width: 830px) {
+          width: 145px;
+          font-size: 12px;
+        }
+      }
+
+      &-button:hover {
+        cursor: pointer;
+        background-color: white;
+      }
+
+      &-button--left {
+        background-color: $primary-blue;
+        color: white;
+        margin-right: 17px;
+      }
+
+      &-button--left:hover {
+        border: 2px solid $primary-blue;
+        color: $primary-blue;
+      }
+      &-button--right:hover {
+        border: 2px solid #5f626b;
+        color: #5f626b;
+      }
+
+      &-button--right {
+        background-color: #f7f7f7;
+        color: #595966;
+      }
+    }
+  }
+
+  &-photo {
+    position: absolute;
+    top: -133px;
+    right: calc(50vw - 668px);
+    z-index: 2;
+
+    @media only screen and (max-width: 1300px) {
+      right: -100px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      right: -200px;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      right: -300px;
+    }
+
+    @media only screen and (max-width: 780px) {
+      width: calc(100vw - 40px);
+      left: calc(50vw - (100vw - 24px) / 2);
+    }
+
+    img {
+      @media only screen and (max-width: 780px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &-photo::before {
+    position: absolute;
+    content: '';
+    height: 352px;
+    width: calc(515px + (100vw - 1440px) * 0.5);
+    background-color: $primary-blue;
+    top: 143px;
+    right: -52px;
+    border-radius: 0 0 0 175px;
+    z-index: -1;
+
+    @media only screen and (min-width: 1441px) {
+      right: calc(-52px + (100vw - 1440px) * -0.5);
+    }
+
+    @media only screen and (max-width: 780px) {
+      top: 56px;
+      right: -30px;
+      width: 76vw;
+      height: 54vw;
+    }
+
+    @media only screen and (max-width: 450px) {
+      top: 56px;
+      right: -30px;
+      width: 84vw;
+      height: 52vw;
+      border-radius: 0 0 0 111px;
+    }
+  }
+}

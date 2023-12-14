@@ -1,3 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
 
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:focus {
+  padding: 4px;
+}
+
+.hamburger,
+.navigation {
+  transition: transform 0.3s 0.1s ease-in-out;
+}
+@media only screen and (min-width: 781px) {
+  .hamburger,
+  .navigation {
+    display: none !important;
+  }
+}
+
+.hamburgeractive {
+  position: absolute !important;
+  top: 41px;
+  right: 43px;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  z-index: 100;
+  position: absolute;
+  top: 41px;
+  right: 43px;
+}
+.hamburger__box {
+  width: 18px;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+}
+.hamburger__inner {
+  top: 50%;
+  transform: translateY(50%);
+  transition: background-color 0.1s 0.2s ease-in-out;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+}
+.hamburger__inner::before, .hamburger__inner::after {
+  content: "";
+  transition: transform 0.4s 0.2s ease-in-out;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+}
+.hamburger__inner::before {
+  top: -6px;
+}
+.hamburger__inner::after {
+  top: 6px;
+}
+.hamburgeractive .hamburger__inner {
+  background-color: transparent;
+  transition: color 2.5s ease;
+}
+.hamburgeractive .hamburger__inner::before {
+  transform: translateY(6px) rotate(45deg);
+  background-color: white;
+}
+.hamburgeractive .hamburger__inner::after {
+  transform: translateY(-6px) rotate(-45deg);
+  background-color: white;
+}
+
+.navigation__logo--white {
+  position: absolute;
+  top: 40px;
+  left: 32px;
+}
+
+.navigation {
+  z-index: 99;
+  height: 100vh;
+  background-color: hsl(229, 31%, 21%);
+  opacity: 0.92;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100vw);
+  display: flex;
+  border-right: solid 1px;
+  justify-content: center;
+  width: 100vw;
+}
+.navigation ul {
+  margin-top: 85px;
+  text-align: center;
+}
+.navigation ul li {
+  position: relative;
+}
+.navigation ul li p::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: calc(100vw - 60px);
+  left: 0;
+  bottom: -23px;
+  background-color: hsl(233, 17%, 29%);
+}
+.navigation ul li:first-child p::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: calc(100vw - 60px);
+  left: 0;
+  top: -22px;
+  background-color: hsl(233, 17%, 29%);
+}
+.navigation ul li p {
+  color: white;
+  position: relative;
+  margin-bottom: -2px;
+}
+.navigation ul li p a {
+  letter-spacing: 3px;
+}
+.navigation ul li p a:hover {
+  color: hsl(0, 94%, 66%);
+}
+.navigation ul button {
+  margin-top: 21px;
+  height: 48px;
+  width: calc(100vw - 66px);
+  letter-spacing: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.navigation ul button:hover {
+  background-color: rgba(178, 176, 176, 0.2);
+  cursor: pointer;
+}
+.navigationactive {
+  transform: translateX(0);
+}
+.navigation__list {
+  list-style: none;
+  padding: 0;
+}
+.navigation__item {
+  margin: 20px;
+  padding: 4px;
+}
+
+.navigation__icon-twitter,
+.navigation__icon-fb {
+  position: absolute;
+  bottom: 41px;
+}
+
+.navigation__icon-twitter {
+  left: calc(50vw + 20px);
+  bottom: 43px;
+}
+
+.navigation__icon-fb {
+  bottom: 41px;
+  left: calc(50vw - 44px);
+}
 
 /*# sourceMappingURL=HamburgerMenu.css.map */

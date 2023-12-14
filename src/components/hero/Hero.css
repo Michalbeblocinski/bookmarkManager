@@ -1,3 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
 
+.landing-page__hero {
+  margin-top: 108px;
+  position: relative;
+}
+.landing-page__hero-info {
+  width: 500px;
+  margin: 274px 0 0 calc(50vw - 555px);
+}
+@media only screen and (max-width: 1300px) {
+  .landing-page__hero-info {
+    margin: 274px 0 0 150px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .landing-page__hero-info {
+    margin: 274px 0 0 120px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .landing-page__hero-info {
+    margin: 274px 0 0 80px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__hero-info {
+    padding-top: 148px;
+  }
+}
+.landing-page__hero-info h1 {
+  color: hsl(229, 31%, 21%);
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 26px;
+}
+@media only screen and (max-width: 900px) {
+  .landing-page__hero-info h1 {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .landing-page__hero-info h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__hero-info h1 {
+    margin-top: 11px;
+  }
+}
+.landing-page__hero-info p {
+  color: hsl(229, 8%, 60%);
+  line-height: 28px;
+  margin-bottom: 33px;
+}
+@media only screen and (max-width: 900px) {
+  .landing-page__hero-info p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .landing-page__hero-info p {
+    font-size: 14px;
+  }
+}
+.landing-page__hero-info-buttons-button {
+  border: none;
+  border-radius: 5px;
+  height: 48px;
+  width: 165px;
+  font-weight: 600;
+  -moz-box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 830px) {
+  .landing-page__hero-info-buttons-button {
+    width: 145px;
+    font-size: 12px;
+  }
+}
+.landing-page__hero-info-buttons-button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.landing-page__hero-info-buttons-button--left {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  margin-right: 17px;
+}
+.landing-page__hero-info-buttons-button--left:hover {
+  border: 2px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+}
+.landing-page__hero-info-buttons-button--right:hover {
+  border: 2px solid #5f626b;
+  color: #5f626b;
+}
+.landing-page__hero-info-buttons-button--right {
+  background-color: #f7f7f7;
+  color: #595966;
+}
+.landing-page__hero-photo {
+  position: absolute;
+  top: -133px;
+  right: calc(50vw - 668px);
+  z-index: 2;
+}
+@media only screen and (max-width: 1300px) {
+  .landing-page__hero-photo {
+    right: -100px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .landing-page__hero-photo {
+    right: -200px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .landing-page__hero-photo {
+    right: -300px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__hero-photo {
+    width: calc(100vw - 40px);
+    left: calc(50vw - (100vw - 24px) / 2);
+  }
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__hero-photo img {
+    width: 100%;
+    height: auto;
+  }
+}
+.landing-page__hero-photo::before {
+  position: absolute;
+  content: "";
+  height: 352px;
+  width: calc(515px + (100vw - 1440px) * 0.5);
+  background-color: hsl(231, 69%, 60%);
+  top: 143px;
+  right: -52px;
+  border-radius: 0 0 0 175px;
+  z-index: -1;
+}
+@media only screen and (min-width: 1441px) {
+  .landing-page__hero-photo::before {
+    right: calc(-52px + (100vw - 1440px) * -0.5);
+  }
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__hero-photo::before {
+    top: 56px;
+    right: -30px;
+    width: 76vw;
+    height: 54vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .landing-page__hero-photo::before {
+    top: 56px;
+    right: -30px;
+    width: 84vw;
+    height: 52vw;
+    border-radius: 0 0 0 111px;
+  }
+}
 
 /*# sourceMappingURL=Hero.css.map */
