@@ -11,10 +11,8 @@ export const Hero: React.FC = () => {
           Manager
         </h1>
         <p>
-          A clean and simple interface to organize your favourite <br />
-          websites. Open a new browser tab and see your sites load
-          <br />
-          instantly. Try it for free.
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
         </p>
         <div className='landing-page__hero-info-buttons'>
           <button className='landing-page__hero-info-buttons-button landing-page__hero-info-buttons-button--left'>
