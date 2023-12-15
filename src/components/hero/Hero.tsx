@@ -14,13 +14,15 @@ export const Hero: React.FC = () => {
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div className='landing-page__hero-info-buttons'>
-          <button className='landing-page__hero-info-buttons-button landing-page__hero-info-buttons-button--left'>
-            Get it on Chrome
-          </button>
-          <button className='landing-page__hero-info-buttons-button landing-page__hero-info-buttons-button--right'>
-            Get it on Firefox
-          </button>
+        <div className={'test'}>
+          <div className='landing-page__hero-info-buttons'>
+            <button className='landing-page__hero-info-buttons-button landing-page__hero-info-buttons-button--left'>
+              Get it on Chrome
+            </button>
+            <button className='landing-page__hero-info-buttons-button landing-page__hero-info-buttons-button--right'>
+              Get it on Firefox
+            </button>
+          </div>
         </div>
       </div>
       <div className='landing-page__hero-photo'>

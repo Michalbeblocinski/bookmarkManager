@@ -8,11 +8,6 @@ body {
   margin-top: 108px;
   position: relative;
 }
-@media only screen and (max-width: 780px) {
-  .landing-page__hero {
-    z-index: -1;
-  }
-}
 .landing-page__hero-info {
   margin: 274px 0 0 calc(50vw - 555px);
   width: 500px;
@@ -56,6 +51,7 @@ body {
   font-size: 48px;
   line-height: 50px;
   margin-bottom: 26px;
+  font-weight: 500;
 }
 @media only screen and (max-width: 900px) {
   .landing-page__hero-info h1 {
@@ -108,7 +104,6 @@ body {
     line-height: 22px;
     font-size: 16px;
     position: relative;
-    z-index: -1;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -154,7 +149,6 @@ body {
 @media only screen and (max-width: 780px) {
   .landing-page__hero-info-buttons-button {
     position: relative;
-    z-index: 100;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -193,9 +187,14 @@ body {
 }
 .landing-page__hero-photo {
   position: absolute;
-  top: -133px;
+  top: -79px;
   right: calc(50vw - 668px);
   z-index: 2;
+}
+@media only screen and (min-width: 1400px) {
+  .landing-page__hero-photo {
+    right: 36px;
+  }
 }
 @media only screen and (max-width: 1300px) {
   .landing-page__hero-photo {
@@ -212,11 +211,15 @@ body {
     right: -300px;
   }
 }
+@media only screen and (max-width: 800px) {
+  .landing-page__hero-photo {
+    right: -310px;
+  }
+}
 @media only screen and (max-width: 780px) {
   .landing-page__hero-photo {
     width: calc(100vw - 40px);
     left: calc(50vw - (100vw - 24px) / 2);
-    z-index: -1;
     top: -150px;
   }
 }

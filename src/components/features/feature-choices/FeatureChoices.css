@@ -1,3 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
 
+.landing-page__features-choices {
+  position: relative;
+}
+.landing-page__features-choices-photo {
+  position: absolute;
+  left: calc(50vw - 551px);
+  top: -63px;
+}
+.landing-page__features-choices-info {
+  max-width: 440px;
+  margin: 135px 0 0 calc(57vw + 8px);
+  font-size: 16px;
+}
+.landing-page__features-choices-info h1 {
+  margin-bottom: 25px;
+  color: hsl(229, 31%, 21%);
+}
+.landing-page__features-choices-info p {
+  font-size: 18px;
+  line-height: 28px;
+  color: hsl(229, 8%, 60%);
+}
+.landing-page__features-choices-info button {
+  height: 48px;
+  width: 114px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 13px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.landing-page__features-choices-info button:hover {
+  border: 2px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+  background-color: white;
+}
 
 /*# sourceMappingURL=FeatureChoices.css.map */

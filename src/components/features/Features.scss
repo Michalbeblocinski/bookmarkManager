@@ -1,0 +1,68 @@
+@import '../../../utils/settings';
+
+.landing-page__features {
+  &-info {
+    max-width: 550px;
+    margin: 0 auto 0 auto;
+    padding-left: 16px;
+
+    h1 {
+      margin: 212px 0 25px !important;
+      font-size: 32px;
+      font-weight: 500;
+      color: $dark-blue;
+    }
+
+    h1,
+    p {
+      text-align: center;
+    }
+
+    p {
+      color: $gray;
+      line-height: 28px;
+    }
+  }
+
+  &-choices {
+    &--no-active {
+      display: none;
+    }
+
+    &--active {
+      display: block;
+    }
+
+    &-list {
+      margin-top: 52px;
+      padding-right: 25px;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+
+      &-element {
+        list-style: none;
+        width: 243px;
+        text-align: center;
+        border-bottom: 1px solid #e0e0ea;
+        font-size: 17px;
+        padding-bottom: 9px;
+      }
+
+      &-element:hover {
+        color: $primary-red;
+        cursor: pointer;
+      }
+
+      &-element--clicked {
+        color: black;
+        border-bottom: 5px solid $primary-red;
+      }
+
+      &-element--no-clicked {
+        color: $gray;
+      }
+    }
+  }
+}

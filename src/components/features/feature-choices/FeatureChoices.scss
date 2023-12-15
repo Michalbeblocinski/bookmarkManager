@@ -1,0 +1,51 @@
+@import '../../../../utils/settings';
+
+.landing-page__features-choices {
+  position: relative;
+
+  &-photo {
+    position: absolute;
+    left: calc(50vw - 551px);
+    top: -63px;
+
+    &-img {
+    }
+  }
+
+  &-info {
+    max-width: 440px;
+    margin: 135px 0 0 calc(57vw + 8px);
+    font-size: 16px;
+
+    h1 {
+      margin-bottom: 25px;
+      color: $dark-blue;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      color: $gray;
+    }
+
+    button {
+      height: 48px;
+      width: 114px;
+      background-color: $primary-blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 13px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+
+    button:hover {
+      border: 2px solid $primary-blue;
+      color: $primary-blue;
+      background-color: white;
+    }
+  }
+}

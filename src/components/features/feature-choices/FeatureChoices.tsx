@@ -27,7 +27,7 @@ export const FeaturesChoices: React.FC<FeaturesChoicesProps> = ({
       <div className='landing-page__features-choices-info'>
         <h1>{title}</h1>
         <p>{text}</p>
-        <button onClick={info}>More info</button>
+        <button onClick={info}>More Info</button>
       </div>
     </div>
   );

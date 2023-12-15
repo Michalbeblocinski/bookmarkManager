@@ -5,24 +5,65 @@ import firstImg from '@assets/images/illustration-features-tab-1.svg';
 import secondImg from '@assets/images/illustration-features-tab-2.svg';
 import thirdImg from '@assets/images/illustration-features-tab-3.svg';
 export const Features: React.FC = () => {
-  const [firstCard, setFirstCard] = useState<string>('active');
-  const [secondCard, setSecondCard] = useState<string>('noactive');
-  const [thirdCard, setThirdCard] = useState<string>('noactive');
-
+  const [firstCard, setFirstCard] = useState<string>(
+    'landing-page__features-choices--active',
+  );
+  const [secondCard, setSecondCard] = useState<string>(
+    'landing-page__features-choices--no-active',
+  );
+  const [thirdCard, setThirdCard] = useState<string>(
+    'landing-page__features-choices--no-active',
+  );
+  const [firstElement, setFirstElement] = useState<string>(
+    'landing-page__features-choices-list-element landing-page__features-choices-list-element--clicked',
+  );
+  const [secondElement, setsSecondElement] = useState<string>(
+    'landing-page__features-choices-list-element landing-page__features-choices-list-element--no-clicked',
+  );
+  const [thirdElement, setThirdElement] = useState<string>(
+    'landing-page__features-choices-list-element landing-page__features-choices-list-element--no-clicked',
+  );
   const handleVisibleTab1 = () => {
-    setFirstCard('active');
-    setSecondCard('noactive');
-    setThirdCard('noactive');
+    setFirstCard('landing-page__features-choices--active');
+    setSecondCard('landing-page__features-choices--no-active');
+    setThirdCard('landing-page__features-choices--no-active');
+    setFirstElement(
+      'landing-page__features-choices-list-element landing-page__features-choices-list-element--clicked',
+    );
+    setsSecondElement(
+      'landing-page__features-choices-list-element landing-page__features-choices-list-element--no-clicked',
+    );
+    setThirdElement(
+      'landing-page__features-choices-list-element landing-page__features-choices-list-element--no-clicked',
+    );
   };
   const handleVisibleTab2 = () => {
-    setFirstCard('noactive');
-    setSecondCard('active');
-    setThirdCard('noactive');
+    setFirstCard('landing-page__features-choices--no-active');
+    setSecondCard('landing-page__features-choices--active');
+    setThirdCard('landing-page__features-choices--no-active');
+    setFirstElement(
+      'landing-page__features-choices-list-element landing-page__features-choices-list-element--no-clicked',
+    );
+    setsSecondElement(
+      'landing-page__features-choices-list-element landing-page__features-choices-list-element--clicked',
+    );
+    setThirdElement(
+      'landing-page__features-choices-list-element landing-page__features-choices-list-element--no-clicked',
+    );
   };
   const handleVisibleTab3 = () => {
-    setFirstCard('noactive');
-    setSecondCard('noactive');
-    setThirdCard('active');
+    setFirstCard('landing-page__features-choices--no-active');
+    setSecondCard('landing-page__features-choices--no-active');
+    setThirdCard('landing-page__features-choices--active');
+    setFirstElement(
+      'landing-page__features-choices-list-element landing-page__features-choices-list-element--no-clicked',
+    );
+    setsSecondElement(
+      'landing-page__features-choices-list-element landing-page__features-choices-list-element--no-clicked',
+    );
+    setThirdElement(
+      'landing-page__features-choices-list-element landing-page__features-choices-list-element--clicked',
+    );
   };
   const openModal = () => {};
   return (
@@ -32,27 +73,18 @@ export const Features: React.FC = () => {
         <p>
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
-          them on the go
+          them on the go.
         </p>
       </div>
       <div className='landing-page__features-choices'>
         <ul className='landing-page__features-choices-list'>
-          <li
-            className='landing-page__features-choices-list-element'
-            onClick={handleVisibleTab1}
-          >
+          <li className={firstElement} onClick={handleVisibleTab1}>
             <p>Simple Bookmarking</p>
           </li>
-          <li
-            className='landing-page__features-choices-list-element'
-            onClick={handleVisibleTab2}
-          >
+          <li className={secondElement} onClick={handleVisibleTab2}>
             <p>Speedy Searching</p>
           </li>
-          <li
-            className='landing-page__features-choices-list-element'
-            onClick={handleVisibleTab3}
-          >
+          <li className={thirdElement} onClick={handleVisibleTab3}>
             <p>Easy Sharing</p>
           </li>
         </ul>
@@ -62,7 +94,7 @@ export const Features: React.FC = () => {
         info={openModal}
         photoUrl={firstImg}
         text={
-          'Organize your bookmark however you like. Our simple drag-adn-drop interface gives you complete control over how you manage you favourite sites.'
+          'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.'
         }
         title={'Bookmark in one click'}
       />

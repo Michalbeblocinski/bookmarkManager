@@ -1,3 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
 
+.landing-page__features-info {
+  max-width: 550px;
+  margin: 0 auto 0 auto;
+  padding-left: 16px;
+}
+.landing-page__features-info h1 {
+  margin: 212px 0 25px !important;
+  font-size: 32px;
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
+}
+.landing-page__features-info h1,
+.landing-page__features-info p {
+  text-align: center;
+}
+.landing-page__features-info p {
+  color: hsl(229, 8%, 60%);
+  line-height: 28px;
+}
+.landing-page__features-choices--no-active {
+  display: none;
+}
+.landing-page__features-choices--active {
+  display: block;
+}
+.landing-page__features-choices-list {
+  margin-top: 52px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.landing-page__features-choices-list-element {
+  list-style: none;
+  width: 243px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0ea;
+  font-size: 17px;
+  padding-bottom: 9px;
+}
+.landing-page__features-choices-list-element:hover {
+  color: hsl(0, 94%, 66%);
+  cursor: pointer;
+}
+.landing-page__features-choices-list-element--clicked {
+  color: black;
+  border-bottom: 5px solid hsl(0, 94%, 66%);
+}
+.landing-page__features-choices-list-element--no-clicked {
+  color: hsl(229, 8%, 60%);
+}
 
 /*# sourceMappingURL=Features.css.map */
