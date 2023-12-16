@@ -73,11 +73,11 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
 }
-.navigation-bar__menu-list-element a {
+.navigation-bar__menu-list-element p {
   color: hsl(229, 31%, 21%);
   text-decoration: none;
 }
-.navigation-bar__menu-list-element a:hover {
+.navigation-bar__menu-list-element p:hover {
   color: hsl(0, 94%, 66%);
 }
 .navigation-bar__menu-list-element-button {

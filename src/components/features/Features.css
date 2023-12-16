@@ -9,11 +9,34 @@ body {
   margin: 0 auto 0 auto;
   padding-left: 16px;
 }
+@media only screen and (max-width: 780px) {
+  .landing-page__features-info {
+    width: 350px !important;
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__features-info {
+    width: 240px !important;
+    padding: 0 !important;
+  }
+}
 .landing-page__features-info h1 {
   margin: 212px 0 23px !important;
   font-size: 32px;
   font-weight: 500;
   color: hsl(229, 31%, 21%);
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__features-info h1 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__features-info h1 {
+    font-size: 20px;
+    margin: 200px 0 10px !important;
+  }
 }
 .landing-page__features-info h1,
 .landing-page__features-info p {
@@ -22,6 +45,27 @@ body {
 .landing-page__features-info p {
   color: hsl(229, 8%, 60%);
   line-height: 28px;
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__features-info p {
+    margin-bottom: -20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .landing-page__features-info p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .landing-page__features-info p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__features-info p {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }
 .landing-page__features-choices--no-active {
   display: none;
@@ -37,13 +81,36 @@ body {
   align-content: center;
   justify-content: center;
 }
+@media only screen and (max-width: 780px) {
+  .landing-page__features-choices-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 9px;
+  }
+}
 .landing-page__features-choices-list-element {
   list-style: none;
   width: 243px;
   text-align: center;
   border-bottom: 1px solid #e0e0ea;
   font-size: 17px;
+  padding-top: 2px;
   padding-bottom: 9px;
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__features-choices-list-element {
+    width: 80vw;
+    font-size: 14px;
+  }
+}
+.landing-page__features-choices-list-element:first-child {
+  border-top: 1px solid #e0e0ea;
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__features-choices-list-element p {
+    margin-bottom: 7px;
+  }
 }
 .landing-page__features-choices-list-element:hover {
   color: hsl(0, 94%, 66%);
@@ -52,6 +119,28 @@ body {
 .landing-page__features-choices-list-element--clicked {
   color: black;
   border-bottom: 5px solid hsl(0, 94%, 66%);
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__features-choices-list-element--clicked {
+    border-bottom: 1px solid #e0e0ea;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__features-choices-list-element--clicked::before {
+    content: "";
+    height: 3px;
+    width: 124px;
+    position: absolute;
+    bottom: -1px;
+    left: calc(40vw - 62px);
+    background-color: hsl(0, 94%, 66%);
+  }
+}
+@media only screen and (max-width: 330px) and (min-width: 320px) {
+  .landing-page__features-choices-list-element--clicked::before {
+    left: calc(50vw - 97px);
+  }
 }
 .landing-page__features-choices-list-element--no-clicked {
   color: hsl(229, 8%, 60%);

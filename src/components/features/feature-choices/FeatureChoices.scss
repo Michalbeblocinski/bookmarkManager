@@ -7,6 +7,30 @@
     position: absolute;
     left: calc(50vw - 551px);
     top: -63px;
+
+    @media only screen and (max-width: 780px) {
+      top: calc(-238px - 40vw);
+      left: 8vw;
+    }
+
+    @media only screen and (min-width: 330px) and (max-width: 480px) {
+      top: calc(-238px - 20vw);
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 600px) {
+      top: calc(-238px - 30vw);
+    }
+
+    @media only screen and (max-width: 345px) {
+      top: -238px;
+    }
+
+    img {
+      @media only screen and (max-width: 780px) {
+        width: 80vw !important;
+        height: auto;
+      }
+    }
   }
 
   &-photo::before {
@@ -26,16 +50,16 @@
     }
 
     @media only screen and (max-width: 780px) {
-      top: 56px;
-      left: -30px;
-      width: 76vw;
+      top: calc(30px + 5vw);
+      left: -8vw;
+      width: 84vw;
       height: 54vw;
     }
 
-    @media only screen and (max-width: 450px) {
-      top: 46px;
+    @media only screen and (max-width: 380px) {
+      top: 30px;
       left: -30px;
-      width: 84vw;
+      width: 83vw;
       height: 52vw;
       border-radius: 0 0 111px 0;
     }
@@ -46,15 +70,51 @@
     margin: 135px 0 0 calc(57vw + 8px);
     font-size: 16px;
 
+    @media only screen and (max-width: 780px) {
+      margin: calc(300px + 40vw) auto 0 auto;
+      text-align: center;
+    }
+
+    @media only screen and (min-width: 380px) and (max-width: 600px) {
+      margin: calc(300px + 23vw) auto 0 auto !important;
+    }
+
+    @media only screen and (max-width: 345px) {
+      margin: 300px auto 0 auto;
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: 265px;
+    }
+
     h1 {
       margin-bottom: 22px;
       color: $dark-blue;
+
+      @media only screen and (max-width: 780px) {
+        font-size: 24px;
+      }
+
+      @media only screen and (max-width: 400px) {
+        font-size: 20px;
+        padding-top: 8px;
+        margin-bottom: 11px;
+      }
     }
 
     p {
       font-size: 18px;
       line-height: 28px;
       color: $gray;
+
+      @media only screen and (max-width: 780px) {
+        font-size: 16px;
+        line-height: 21px;
+      }
+
+      @media only screen and (max-width: 400px) {
+        font-size: 13px;
+      }
     }
 
     button {
@@ -69,6 +129,10 @@
       font-size: 14px;
       letter-spacing: 1px;
       font-weight: 500;
+
+      @media only screen and (max-width: 780px) {
+        display: none;
+      }
     }
 
     button:hover {
@@ -82,11 +146,16 @@
 .landing-page__features-choices--second-card,
 .landing-page__features-choices--third-card {
   .landing-page__features-choices-photo {
-    left: calc(50vw - 477px) !important;
+    @media only screen and (min-width: 780px) {
+      left: calc(50vw - 477px) !important;
+    }
   }
 
   .landing-page__features-choices-photo::before {
-    left: -242px !important;
+    @media only screen and (min-width: 780px) {
+      left: -242px !important;
+    }
+
     @media only screen and (min-width: 1440px) {
       left: calc(-242px + (100vw - 1440px) * -0.5) !important;
     }
@@ -102,6 +171,13 @@
     z-index: -1;
     top: 80px;
 
+    @media only screen and (max-width: 780px) {
+      top: 28px;
+      right: 13px !important;
+      width: 30vw !important;
+      height: 70vw;
+    }
+
     @media only screen and (min-width: 1440px) {
       right: 80px;
       width: 80px;
@@ -113,5 +189,12 @@
   .landing-page__features-choices-photo::after {
     right: 33px !important;
     width: 90px !important;
+
+    @media only screen and (max-width: 780px) {
+      top: 28px;
+      right: 13px !important;
+      width: 30vw !important;
+      height: 70vw;
+    }
   }
 }
