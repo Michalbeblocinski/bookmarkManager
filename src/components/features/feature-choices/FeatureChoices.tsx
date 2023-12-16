@@ -7,6 +7,7 @@ type FeaturesChoicesProps = {
   text: string;
   info: () => void;
   photoUrl: string;
+  version: string;
 };
 export const FeaturesChoices: React.FC<FeaturesChoicesProps> = ({
   active,
@@ -14,9 +15,12 @@ export const FeaturesChoices: React.FC<FeaturesChoicesProps> = ({
   text,
   info,
   photoUrl,
+  version,
 }) => {
   return (
-    <div className={`landing-page__features-choices  ${active}`}>
+    <div
+      className={`landing-page__features-choices  ${active} landing-page__features-choices--${version}`}
+    >
       <div className='landing-page__features-choices-photo'>
         <img
           className={'landing-page__features-choices-photo-img'}

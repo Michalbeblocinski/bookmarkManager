@@ -7,8 +7,37 @@
     position: absolute;
     left: calc(50vw - 551px);
     top: -63px;
+  }
 
-    &-img {
+  &-photo::before {
+    position: absolute;
+    content: '';
+    height: 352px;
+    width: 644px;
+    left: -169px;
+    background-color: $primary-blue;
+    top: 82px;
+    border-radius: 0 0 175px 0;
+    z-index: -1;
+
+    @media only screen and (min-width: 1440px) {
+      left: calc(-169px + (100vw - 1440px) * -0.5);
+      width: calc(639px + (100vw - 1440px) * 0.5);
+    }
+
+    @media only screen and (max-width: 780px) {
+      top: 56px;
+      left: -30px;
+      width: 76vw;
+      height: 54vw;
+    }
+
+    @media only screen and (max-width: 450px) {
+      top: 46px;
+      left: -30px;
+      width: 84vw;
+      height: 52vw;
+      border-radius: 0 0 111px 0;
     }
   }
 
@@ -18,7 +47,7 @@
     font-size: 16px;
 
     h1 {
-      margin-bottom: 25px;
+      margin-bottom: 22px;
       color: $dark-blue;
     }
 
@@ -36,7 +65,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 13px;
+      margin-top: 15px;
       font-size: 14px;
       letter-spacing: 1px;
       font-weight: 500;
@@ -47,5 +76,42 @@
       color: $primary-blue;
       background-color: white;
     }
+  }
+}
+
+.landing-page__features-choices--second-card,
+.landing-page__features-choices--third-card {
+  .landing-page__features-choices-photo {
+    left: calc(50vw - 477px) !important;
+  }
+
+  .landing-page__features-choices-photo::before {
+    left: -242px !important;
+    @media only screen and (min-width: 1440px) {
+      left: calc(-242px + (100vw - 1440px) * -0.5) !important;
+    }
+  }
+
+  .landing-page__features-choices-photo::after {
+    right: 75px;
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 60px;
+    background-color: white;
+    z-index: -1;
+    top: 80px;
+
+    @media only screen and (min-width: 1440px) {
+      right: 80px;
+      width: 80px;
+    }
+  }
+}
+
+.landing-page__features-choices--third-card {
+  .landing-page__features-choices-photo::after {
+    right: 33px !important;
+    width: 90px !important;
   }
 }

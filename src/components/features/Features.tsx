@@ -91,6 +91,7 @@ export const Features: React.FC = () => {
       </div>
       <FeaturesChoices
         active={firstCard}
+        version={'first-card'}
         info={openModal}
         photoUrl={firstImg}
         text={
@@ -100,6 +101,7 @@ export const Features: React.FC = () => {
       />
       <FeaturesChoices
         active={secondCard}
+        version={'second-card'}
         info={openModal}
         photoUrl={secondImg}
         text={
@@ -109,6 +111,7 @@ export const Features: React.FC = () => {
       />
       <FeaturesChoices
         active={thirdCard}
+        version={'third-card'}
         info={openModal}
         photoUrl={thirdImg}
         text={

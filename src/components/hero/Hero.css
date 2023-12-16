@@ -233,15 +233,16 @@ body {
   position: absolute;
   content: "";
   height: 352px;
-  width: calc(515px + (100vw - 1440px) * 0.5);
+  width: 512px;
   background-color: hsl(231, 69%, 60%);
   top: 143px;
   right: -52px;
   border-radius: 0 0 0 175px;
   z-index: -1;
 }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1440px) {
   .landing-page__hero-photo::before {
+    width: calc(515px + (100vw - 1440px) * 0.5);
     right: calc(-52px + (100vw - 1440px) * -0.5);
   }
 }
