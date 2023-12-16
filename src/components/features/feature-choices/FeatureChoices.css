@@ -102,6 +102,7 @@ body {
 .landing-page__features-choices-info h1 {
   margin-bottom: 22px;
   color: hsl(229, 31%, 21%);
+  font-weight: 500;
 }
 @media only screen and (max-width: 780px) {
   .landing-page__features-choices-info h1 {
