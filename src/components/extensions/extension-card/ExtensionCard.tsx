@@ -15,12 +15,20 @@ export const ExtensionsCard: React.FC<ExtensionsCardProps> = ({
   return (
     <div className='landing-page__extensions-cards-card'>
       <img
-        className={'landing-page__extensions-cards-card-img'}
+        className='landing-page__extensions-cards-card-img'
         alt={'browser'}
         src={photoUrl}
       />
       <h1>{title}</h1>
       <p>{text}</p>
+      <img
+        className='landing-page__extensions-cards-card-dots'
+        alt={'dots'}
+        src={dots}
+      />
+      <button className='landing-page__extensions-cards-card-button'>
+        Add & Install Extension
+      </button>
     </div>
   );
 };

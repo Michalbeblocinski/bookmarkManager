@@ -154,11 +154,11 @@
 
   .landing-page__features-choices-photo::before {
     @media only screen and (min-width: 780px) {
-      left: -242px !important;
+      left: -243px !important;
     }
 
     @media only screen and (min-width: 1440px) {
-      left: calc(-242px + (100vw - 1440px) * -0.5) !important;
+      left: calc(-243px + (100vw - 1440px) * -0.5) !important;
     }
   }
 

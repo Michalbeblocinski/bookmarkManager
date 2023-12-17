@@ -22,7 +22,7 @@ body {
   }
 }
 .landing-page__features-info h1 {
-  margin: 212px 0 23px !important;
+  margin: 210px 0 23px !important;
   font-size: 32px;
   font-weight: 500;
   color: hsl(229, 31%, 21%);
@@ -104,8 +104,10 @@ body {
     font-size: 14px;
   }
 }
-.landing-page__features-choices-list-element:first-child {
-  border-top: 1px solid #e0e0ea;
+@media only screen and (max-width: 780px) {
+  .landing-page__features-choices-list-element:first-child {
+    border-top: 1px solid #e0e0ea;
+  }
 }
 @media only screen and (max-width: 780px) {
   .landing-page__features-choices-list-element p {

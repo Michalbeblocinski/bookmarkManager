@@ -17,7 +17,7 @@
     }
 
     h1 {
-      margin: 212px 0 23px !important;
+      margin: 210px 0 23px !important;
       font-size: 32px;
       font-weight: 500;
       color: $dark-blue;
@@ -99,7 +99,9 @@
         }
 
         &:first-child {
-          border-top: 1px solid #e0e0ea;
+          @media only screen and (max-width: 780px) {
+            border-top: 1px solid #e0e0ea;
+          }
         }
 
         p {

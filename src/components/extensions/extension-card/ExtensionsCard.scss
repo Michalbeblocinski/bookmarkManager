@@ -1,1 +1,102 @@
 @import '../../../../utils/settings';
+
+.landing-page__extensions-cards-card {
+  width: 280px;
+  height: 320px;
+  margin: 15px 17px 0 17px;
+  -moz-box-shadow: 2px 14px 16px 0 rgb(77 91 161 / 15%);
+  -webkit-box-shadow: 2px 14px 16px 0 rgb(77 91 161 / 15%);
+  box-shadow: 2px 14px 16px 0 rgb(77 91 161 / 15%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-top: 50px;
+  position: relative;
+
+  @media only screen and (max-width: 1000px) {
+    margin: 15px 10px 0 10px;
+  }
+
+  @media only screen and (max-width: 920px) {
+    margin-bottom: 25px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    width: calc(100vw - 100px);
+    height: 274px;
+    max-height: 274px;
+    margin-bottom: 14px;
+  }
+
+  &-img {
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 400px) {
+      width: 88px;
+      height: auto;
+      margin: -4px 0 18px;
+    }
+  }
+
+  h1 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: $dark-blue;
+    letter-spacing: 1px;
+
+    @media only screen and (max-width: 400px) {
+      font-size: 16px;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    color: $gray;
+    font-size: 15px;
+
+    @media only screen and (max-width: 400px) {
+      font-size: 13px;
+    }
+  }
+
+  &-dots {
+    position: absolute;
+    left: 0;
+    bottom: 96px;
+
+    @media only screen and (max-width: 400px) {
+      width: calc(100vw - 100px);
+      bottom: 83px;
+    }
+  }
+
+  &-button {
+    position: absolute;
+    left: 25px;
+    bottom: 24px;
+    height: 48px;
+    width: 230px;
+    background-color: $primary-blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 400px) {
+      width: calc(100vw - 150px);
+      bottom: 20px;
+      height: 42px;
+      font-size: 12px;
+    }
+  }
+
+  &-button:hover {
+    border: 2px solid $primary-blue;
+    color: $primary-blue;
+    background-color: white;
+  }
+}

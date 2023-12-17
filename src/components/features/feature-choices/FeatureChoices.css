@@ -165,13 +165,13 @@ body {
 @media only screen and (min-width: 780px) {
   .landing-page__features-choices--second-card .landing-page__features-choices-photo::before,
   .landing-page__features-choices--third-card .landing-page__features-choices-photo::before {
-    left: -242px !important;
+    left: -243px !important;
   }
 }
 @media only screen and (min-width: 1440px) {
   .landing-page__features-choices--second-card .landing-page__features-choices-photo::before,
   .landing-page__features-choices--third-card .landing-page__features-choices-photo::before {
-    left: calc(-242px + (100vw - 1440px) * -0.5) !important;
+    left: calc(-243px + (100vw - 1440px) * -0.5) !important;
   }
 }
 .landing-page__features-choices--second-card .landing-page__features-choices-photo::after,

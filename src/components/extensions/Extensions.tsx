@@ -18,18 +18,18 @@ export const Extensions: React.FC = () => {
       <div className='landing-page__extensions-cards'>
         <ExtensionsCard
           photoUrl={chrome}
-          text={'Add to Chrome'}
-          title={'Minimum version 62'}
+          title={'Add to Chrome'}
+          text={'Minimum version 62'}
         />
         <ExtensionsCard
           photoUrl={firefox}
-          text={'Add to Firefox'}
-          title={'Minimum version 55'}
+          title={'Add to Firefox'}
+          text={'Minimum version 55'}
         />
         <ExtensionsCard
           photoUrl={opera}
-          text={'Add to Opera'}
-          title={'Minimum version 46'}
+          title={'Add to Opera'}
+          text={'Minimum version 46'}
         />
       </div>
     </div>

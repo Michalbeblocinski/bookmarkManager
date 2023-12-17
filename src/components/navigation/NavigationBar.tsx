@@ -7,25 +7,32 @@ import { Link } from 'react-router-dom';
 export const NavigationBar: React.FC = () => {
   return (
     <div className='navigation-bar'>
-      <p>
+      <Link to='/'>
         <img className={'navigation-bar__logo'} alt={'logo'} src={logo} />
-      </p>
-
+      </Link>
       <div className={'navigation-bar__menu'}>
         <ul className={'navigation-bar__menu-list'}>
           <li className={'navigation-bar__menu-list-element'}>
-            <p>FEATURES</p>
+            <Link to='/'>
+              <p>FEATURES</p>
+            </Link>
           </li>
           <li className={'navigation-bar__menu-list-element'}>
-            <p>PRICING</p>{' '}
+            <Link to='/'>
+              <p>PRICING</p>
+            </Link>
           </li>
           <li className={'navigation-bar__menu-list-element'}>
-            <p>CONTACT</p>
+            <Link to='/'>
+              <p>CONTACT</p>
+            </Link>
           </li>
           <li className={'navigation-bar__menu-list-element'}>
-            <button className={'navigation-bar__menu-list-element-button'}>
-              LOGIN
-            </button>
+            <Link to='/'>
+              <button className={'navigation-bar__menu-list-element-button'}>
+                LOGIN
+              </button>
+            </Link>
           </li>
         </ul>
       </div>
