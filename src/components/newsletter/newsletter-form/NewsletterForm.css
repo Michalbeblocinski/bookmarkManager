@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+.landing-page__newsletter-info-form {
+  position: relative;
+}
+.landing-page__newsletter-info-form-input {
+  position: relative;
+  width: 272px;
+  padding-left: 20px;
+  left: -71px;
+  height: 46px;
+  z-index: 1;
+}
+@media only screen and (max-width: 500px) {
+  .landing-page__newsletter-info-form-input {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__newsletter-info-form-input {
+    width: 245px;
+    left: -8px;
+    height: 39px;
+    font-size: 12px;
+  }
+}
+.landing-page__newsletter-info-form-input::placeholder {
+  color: rgba(84, 83, 83, 0.36);
+}
+.landing-page__newsletter-info-form-input-error {
+  position: absolute;
+  left: -71px;
+  top: 44px;
+  z-index: 0;
+  width: 283px;
+  background-color: hsl(0, 94%, 66%);
+  border-radius: 0 0 6px 6px;
+  height: 20px;
+  padding-left: 15px;
+  font-size: 11px;
+  padding-top: 6px;
+  text-align: left;
+  font-style: italic;
+}
+@media only screen and (max-width: 500px) {
+  .landing-page__newsletter-info-form-input-error {
+    left: 0;
+    top: -18px;
+    border-radius: 6px 6px 0 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__newsletter-info-form-input-error {
+    left: -8px;
+    top: -18px;
+    width: 256px;
+    border-radius: 6px 6px 0 0;
+  }
+}
+.landing-page__newsletter-info-form-button,
+.landing-page__newsletter-info-form .landing-page__newsletter-info-form-input {
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+.landing-page__newsletter-info-form .landing-page__newsletter-info-form-input.error {
+  height: 42px !important;
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__newsletter-info-form .landing-page__newsletter-info-form-input.error {
+    height: 36px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__newsletter-info-form .landing-page__newsletter-info-form-button.error {
+    width: 270px !important;
+  }
+}
+.landing-page__newsletter-info-form-button {
+  letter-spacing: 1px;
+  height: 48px;
+  right: -71px;
+  width: 125px;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  font-weight: 500;
+}
+@media only screen and (max-width: 500px) {
+  .landing-page__newsletter-info-form-button {
+    width: 295px;
+    left: 0;
+    top: 60px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__newsletter-info-form-button {
+    font-size: 12px;
+    width: 267px;
+    left: -8px;
+    height: 42px;
+    top: 55px;
+  }
+}
+.landing-page__newsletter-info-form-button:hover,
+.landing-page__newsletter-info-form .landing-page__newsletter-info-form-input.error {
+  border: 2px solid hsl(0, 94%, 66%);
+}
+.landing-page__newsletter-info-form-button:hover {
+  color: hsl(0, 94%, 66%);
+  background-color: white;
+}
+
+/*# sourceMappingURL=NewsletterForm.css.map */

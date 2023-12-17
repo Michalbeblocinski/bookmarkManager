@@ -1,7 +1,7 @@
 import React from 'react';
 import './LandingPage.scss';
 import { Hero } from '@src/components/hero';
-import { Extensions, Faq, Features } from '@src/components';
+import { Extensions, Faq, Features, Newsletter } from '@src/components';
 
 export const LandingPage: React.FC = () => {
   return (
@@ -10,6 +10,7 @@ export const LandingPage: React.FC = () => {
       <Features />
       <Extensions />
       <Faq />
+      <Newsletter />
     </div>
   );
 };

@@ -1,0 +1,73 @@
+@import '../../../utils/settings';
+
+.landing-page__newsletter {
+  background-color: $primary-blue;
+  height: 360px;
+  width: 100vw;
+
+  @media only screen and (max-width: 400px) {
+    height: 312px;
+  }
+
+  &-info {
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+
+    @media only screen and (max-width: 550px) {
+      max-width: 350px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      max-width: 300px;
+    }
+
+    h1,
+    h2 {
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 12px;
+      letter-spacing: 6px;
+      margin-top: 70px;
+      padding-left: 80px;
+
+      @media only screen and (max-width: 400px) {
+        font-size: 10px;
+        margin-top: 63px;
+        letter-spacing: 4px;
+        padding-left: 50px;
+      }
+
+      span {
+        position: absolute;
+        right: 288px;
+
+        @media only screen and (max-width: 550px) {
+          right: 240px;
+        }
+
+        @media only screen and (max-width: 400px) {
+          right: 205px;
+        }
+      }
+    }
+
+    h1 {
+      margin: 30px 0 38px;
+      font-size: 32px;
+      padding-right: 14px;
+
+      @media only screen and (max-width: 400px) {
+        font-size: 21px;
+        margin: 2px 0 27px;
+      }
+    }
+  }
+}
