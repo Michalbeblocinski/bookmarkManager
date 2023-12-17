@@ -18,44 +18,15 @@
 
     h1 {
       margin: 210px 0 23px !important;
-      font-size: 32px;
-      font-weight: 500;
-      color: $dark-blue;
-
-      @media only screen and (max-width: 780px) {
-        font-size: 24px;
-      }
 
       @media only screen and (max-width: 400px) {
-        font-size: 20px;
         margin: 200px 0 10px !important;
       }
     }
 
-    h1,
     p {
-      text-align: center;
-    }
-
-    p {
-      color: $gray;
-      line-height: 28px;
-
       @media only screen and (max-width: 780px) {
         margin-bottom: -20px;
-      }
-
-      @media only screen and (max-width: 900px) {
-        font-size: 16px;
-      }
-
-      @media only screen and (max-width: 830px) {
-        font-size: 14px;
-      }
-
-      @media only screen and (max-width: 400px) {
-        font-size: 12px;
-        line-height: 22px;
       }
     }
   }

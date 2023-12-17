@@ -4,6 +4,7 @@ import { FeaturesChoices } from '@src/components/features/feature-choices';
 import firstImg from '@assets/images/illustration-features-tab-1.svg';
 import secondImg from '@assets/images/illustration-features-tab-2.svg';
 import thirdImg from '@assets/images/illustration-features-tab-3.svg';
+import { ExtensionsInfo } from '@src/components/components-info';
 export const Features: React.FC = () => {
   const [firstCard, setFirstCard] = useState<string>(
     'landing-page__features-choices--active',
@@ -68,14 +69,12 @@ export const Features: React.FC = () => {
   const openModal = () => {};
   return (
     <div className='landing-page__features'>
-      <div className='landing-page__features-info'>
-        <h1>Features</h1>
-        <p>
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
-        </p>
-      </div>
+      <ExtensionsInfo
+        classNamePrefix={'landing-page__features'}
+        text={`Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.`}
+        title={'Features'}
+      />
+
       <div className='landing-page__features-choices'>
         <ul className='landing-page__features-choices-list'>
           <li className={firstElement} onClick={handleVisibleTab1}>

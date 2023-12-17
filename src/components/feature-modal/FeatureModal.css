@@ -2604,76 +2604,61 @@ body {
   margin-right: 100px;
 }
 
-.landing-page__extensions-info {
-  max-width: 550px;
-  margin: 0px auto 0 auto;
-  padding-left: 16px;
-}
-@media only screen and (max-width: 780px) {
-  .landing-page__extensions-info {
-    width: 350px !important;
-    padding: 0 !important;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .landing-page__extensions-info {
-    width: 240px !important;
-    padding: 0 !important;
-  }
-}
-.landing-page__extensions-info h1,
-.landing-page__extensions-info p {
-  text-align: center;
-}
-.landing-page__extensions-info h1 {
-  margin: 300px 0 23px !important;
-}
-@media only screen and (max-width: 400px) {
-  .landing-page__extensions-info h1 {
-    margin: 132px 0 10px !important;
-  }
-}
-@media only screen and (max-width: 780px) {
-  .landing-page__extensions-info p {
-    margin-bottom: -20px;
-  }
-}
-.landing-page__extensions-cards {
-  padding-left: 15px;
-  display: flex;
-  flex-direction: row;
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
   justify-content: center;
-  margin: 33px 0 120px 0;
+  align-items: center;
+  z-index: 1;
 }
-@media only screen and (max-width: 920px) {
-  .landing-page__extensions-cards {
-    flex-direction: column;
-    align-items: center;
+.modal .landing-page__features-choices-photo {
+  position: absolute;
+  z-index: 3;
+}
+.modal .landing-page__features-choices-photo::before {
+  z-index: -1;
+}
+@media only screen and (max-width: 780px) {
+  .modal .landing-page__features-choices-photo::before {
+    left: -40vw;
   }
 }
-@media only screen and (max-width: 400px) {
-  .landing-page__extensions-cards {
-    padding: 0 !important;
-    margin-bottom: 0 !important;
-  }
+.modal .landing-page__features-choices-photo::after {
+  z-index: 2;
+  left: 350px;
 }
-.landing-page__extensions-cards > :nth-child(2) {
+.modal.open {
+  display: flex;
+}
+.modal .modal-content {
+  min-height: 600px;
+  width: 90vw;
+  height: 70vh;
+  background: white;
+  padding: 0;
+  border-radius: 5px;
   position: relative;
-  top: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-@media only screen and (max-width: 920px) {
-  .landing-page__extensions-cards > :nth-child(2) {
-    top: 0;
-  }
+.modal .close-button {
+  position: absolute;
+  right: 32px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
 }
-.landing-page__extensions-cards > :nth-child(3) {
-  position: relative;
-  top: 80px;
-}
-@media only screen and (max-width: 920px) {
-  .landing-page__extensions-cards > :nth-child(3) {
-    top: 0;
-  }
+.modal .close-button:hover {
+  cursor: pointer;
 }
 
-/*# sourceMappingURL=Extensions.css.map */
+/*# sourceMappingURL=FeatureModal.css.map */

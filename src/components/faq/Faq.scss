@@ -29,43 +29,21 @@
     }
 
     @media only screen and (max-width: 400px) {
-      width: 265px;
+      width: 261px;
       margin: 0 auto;
       padding: 0 !important;
     }
 
     h1 {
       margin-bottom: 22px;
-      color: $dark-blue;
-      font-weight: 500;
-      font-size: 32px;
-
-      @media only screen and (max-width: 780px) {
-        font-size: 24px;
-      }
 
       @media only screen and (max-width: 400px) {
         margin-bottom: 17px;
-        font-size: 20px;
       }
     }
 
     p {
       font-size: 18px;
-      line-height: 28px;
-      color: $gray;
-
-      @media only screen and (max-width: 900px) {
-        font-size: 16px;
-      }
-
-      @media only screen and (max-width: 830px) {
-        font-size: 14px;
-      }
-
-      @media only screen and (max-width: 400px) {
-        line-height: 22px;
-      }
     }
   }
 
@@ -87,6 +65,10 @@
       margin: 42px 0 149px calc(50% - 47px);
       font-size: 12px;
       height: 41px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      margin: 42px 0 87px calc(50% - 47px);
     }
   }
 

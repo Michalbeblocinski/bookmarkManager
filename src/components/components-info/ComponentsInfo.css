@@ -2604,76 +2604,44 @@ body {
   margin-right: 100px;
 }
 
-.landing-page__extensions-info {
-  max-width: 550px;
-  margin: 0px auto 0 auto;
-  padding-left: 16px;
-}
-@media only screen and (max-width: 780px) {
-  .landing-page__extensions-info {
-    width: 350px !important;
-    padding: 0 !important;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .landing-page__extensions-info {
-    width: 240px !important;
-    padding: 0 !important;
-  }
-}
-.landing-page__extensions-info h1,
-.landing-page__extensions-info p {
+.info h1,
+.info p {
   text-align: center;
 }
-.landing-page__extensions-info h1 {
-  margin: 300px 0 23px !important;
-}
-@media only screen and (max-width: 400px) {
-  .landing-page__extensions-info h1 {
-    margin: 132px 0 10px !important;
-  }
+.info h1 {
+  font-size: 32px;
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
 }
 @media only screen and (max-width: 780px) {
-  .landing-page__extensions-info p {
-    margin-bottom: -20px;
-  }
-}
-.landing-page__extensions-cards {
-  padding-left: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 33px 0 120px 0;
-}
-@media only screen and (max-width: 920px) {
-  .landing-page__extensions-cards {
-    flex-direction: column;
-    align-items: center;
+  .info h1 {
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .landing-page__extensions-cards {
-    padding: 0 !important;
-    margin-bottom: 0 !important;
+  .info h1 {
+    font-size: 20px;
   }
 }
-.landing-page__extensions-cards > :nth-child(2) {
-  position: relative;
-  top: 40px;
+.info p {
+  color: hsl(229, 8%, 60%);
+  line-height: 28px;
 }
-@media only screen and (max-width: 920px) {
-  .landing-page__extensions-cards > :nth-child(2) {
-    top: 0;
+@media only screen and (max-width: 900px) {
+  .info p {
+    font-size: 16px;
   }
 }
-.landing-page__extensions-cards > :nth-child(3) {
-  position: relative;
-  top: 80px;
+@media only screen and (max-width: 830px) {
+  .info p {
+    font-size: 14px !important;
+  }
 }
-@media only screen and (max-width: 920px) {
-  .landing-page__extensions-cards > :nth-child(3) {
-    top: 0;
+@media only screen and (max-width: 400px) {
+  .info p {
+    font-size: 12px !important;
+    line-height: 22px;
   }
 }
 
-/*# sourceMappingURL=Extensions.css.map */
+/*# sourceMappingURL=ComponentsInfo.css.map */

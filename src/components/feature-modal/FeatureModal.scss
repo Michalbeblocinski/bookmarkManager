@@ -1,0 +1,67 @@
+@import '../../../utils/settings';
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  .landing-page__features-choices-photo {
+    position: absolute;
+    z-index: 3;
+  }
+
+  .landing-page__features-choices-photo::before {
+    z-index: -1;
+
+    @media only screen and (min-width: 780px) {
+    }
+
+    @media only screen and (max-width: 780px) {
+      left: -40vw;
+    }
+  }
+
+  .landing-page__features-choices-photo::after {
+    z-index: 2;
+    left: 350px;
+  }
+
+  &.open {
+    display: flex;
+  }
+
+  .modal-content {
+    min-height: 600px;
+    width: 90vw;
+    height: 70vh;
+    background: white;
+    padding: 0;
+    border-radius: 5px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .close-button {
+    position: absolute;
+    right: 32px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+  }
+
+  .close-button:hover {
+    cursor: pointer;
+  }
+}
