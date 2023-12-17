@@ -1,3 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
 
+.landing-page__faq {
+  max-width: 540px;
+  margin: 218px auto 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page__faq {
+    margin-top: 94px;
+  }
+}
+.landing-page__faq-info {
+  text-align: center;
+  max-width: 520px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__faq-info {
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page__faq-info {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__faq-info {
+    width: 265px;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+}
+.landing-page__faq-info h1 {
+  margin-bottom: 22px;
+  color: hsl(229, 31%, 21%);
+  font-weight: 500;
+  font-size: 32px;
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__faq-info h1 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__faq-info h1 {
+    margin-bottom: 17px;
+    font-size: 20px;
+  }
+}
+.landing-page__faq-info p {
+  font-size: 18px;
+  line-height: 28px;
+  color: hsl(229, 8%, 60%);
+}
+@media only screen and (max-width: 900px) {
+  .landing-page__faq-info p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .landing-page__faq-info p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-page__faq-info p {
+    line-height: 22px;
+  }
+}
+.landing-page__faq-button {
+  height: 48px;
+  width: 114px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: none;
+  margin: 52px 0 149px calc(50% - 49px);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 780px) {
+  .landing-page__faq-button {
+    width: 100px;
+    margin: 42px 0 149px calc(50% - 47px);
+    font-size: 12px;
+    height: 41px;
+  }
+}
+.landing-page__faq-button:hover {
+  border: 2px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+  background-color: white;
+}
 
 /*# sourceMappingURL=Faq.css.map */

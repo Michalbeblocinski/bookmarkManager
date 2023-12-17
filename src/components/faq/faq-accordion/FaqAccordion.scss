@@ -1,0 +1,126 @@
+@import '../../../../utils/settings';
+
+.landing-page__faq-accordions {
+  margin-top: 40px !important;
+
+  @media only screen and (max-width: 780px) {
+    width: 80vw !important;
+    margin: 0 auto;
+  }
+
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded,
+  .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+    margin: 0 !important;
+  }
+
+  > :nth-child(1)::after {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    right: 0;
+    height: 1px;
+    content: '';
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.12);
+    -webkit-transition:
+      opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition:
+      opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    @media only screen and (max-width: 780px) {
+      display: none;
+    }
+  }
+
+  > :nth-child(4)::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    height: 1px;
+    content: '';
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.12);
+    -webkit-transition:
+      opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition:
+      opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  &-accordion::before {
+    opacity: 1 !important;
+  }
+
+  &-accordion {
+    box-shadow: none !important;
+
+    .Mui-expanded {
+      svg {
+        position: relative;
+        right: 12px;
+        color: $primary-red !important;
+
+        @media only screen and (max-width: 400px) {
+          right: 21px;
+        }
+      }
+    }
+
+    &-summary {
+      svg {
+        color: $primary-blue !important;
+        height: auto !important;
+        width: 40px !important;
+        margin-right: -12px !important;
+
+        @media only screen and (max-width: 400px) {
+          width: 30px !important;
+          margin-right: -21px !important;
+        }
+      }
+    }
+
+    &-topography {
+      font-weight: 500 !important;
+      font-size: 18px !important;
+      padding: 10px 0 5px !important;
+
+      @media only screen and (max-width: 780px) {
+        font-size: 16px !important;
+      }
+
+      @media only screen and (max-width: 400px) {
+        font-size: 13px !important;
+      }
+    }
+
+    &-topography,
+    .landing-page__faq-accordions-accordion-details-text {
+      margin-left: -5px !important;
+
+      @media only screen and (max-width: 780px) {
+        margin-left: -15px !important;
+      }
+    }
+
+    &-topography:hover {
+      color: $primary-red;
+    }
+
+    &-details {
+      &-text {
+        margin-top: 10px !important;
+        line-height: 36px !important;
+        color: $gray;
+
+        @media only screen and (max-width: 780px) {
+          font-size: 13px !important;
+        }
+      }
+    }
+  }
+}

@@ -83,6 +83,7 @@ body {
 @media only screen and (max-width: 400px) {
   .landing-page__extensions-cards {
     padding: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
 .landing-page__extensions-cards > :nth-child(2) {
