@@ -9,7 +9,7 @@ export const NavigationBar: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState<boolean>(false);
 
   const handleOpenModal = () => {
-    setModalOpen(false); //true
+    setModalOpen(true);
   };
 
   const handleCloseModal = () => {
