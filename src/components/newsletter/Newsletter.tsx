@@ -18,7 +18,7 @@ export const Newsletter: React.FC = () => {
         setJoinedCount(newCount);
         requestAnimationFrame(updateCount);
       } else {
-        setJoinedCount(35000);
+        setJoinedCount(0);
       }
     };
 
