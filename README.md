@@ -1,115 +1,50 @@
-# React Webpack Typescript (RWT)
+# Bookmark Managar
 
-React Webpack Typescript Boilerplate with custom webpack configurations for hot reloading.
-
-A minimal secure boilerplate for writing Web Applications using [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
-
-<br>
-
-## Screenshot
-
-<img src="assets/images/screenshot.png" />
-
-<br>
-
-## Core Features
-
-- ⚛️ React
-- 🌀 TypeScript
-- 🥗 SASS/SCSS Loader
-- 🛶 LESS Loader (optional)
-- 🎨 CSS Loader
-- 📸 Image Loader
-- 🆎 Font Loader
-- 🧹 ESLint
-- 🔱 Webpack & Configuration
-- 🧩 Aliases for Project Paths
-- 🔥 React Fast Refresh + Webpack HMR
-- 🌞 Dark Mode + Light Mode (Theme)
-
-<br />
+Welcome to BookmarkMangar, a project built with React, TypeScript, and SCSS using BEM notation.
 
 ## Installation
 
-#### To install this boilerplate you need to run following commands
+To get started with BookmarkMangar, follow these simple steps:
 
-<br>
+1. Navigate to the project folder:
+   ```bash
+   cd bookmarkManagar
+    ```
 
-Clone the repository :
 
-```bash
-git clone https://github.com/codesbiome/react-webpack-typescript-2022
-```
+2. Install the required dependencies:
 
-<br>
+    ```bash
+    npm install
+    ```
 
-Install dependencies using Yarn or NPM or PNPM :
+3. Start the development server:
 
-```bash
-# using pnpm
-pnpm install
+    ```bash
+    npm start
+    ```
 
-# or using yarn
-yarn install
+This will open the project in your default web browser. If it doesn't, you can visit [http://localhost:8080](http://localhost:3000) in your browser.
 
-# or using npm
-npm install
-```
 
-<br />
+### Folder Structure
 
-## Start : Development
+- `assets/`: There are used icons and images.
+- `src/`: Contains the source code of the application.
+    - `components/`: React components used in the project.
+    - `pages/`: Page used in the project.
+    - `components/`: React components used in the project.
+    - `utils/`: There is a scss file with variables and fonts.
 
-To develop and run your web application, you need to run following command :
+### Dependencies
 
-```bash
-yarn start
-```
+- React
+- TypeScript
+- SCSS
+- Formik
+- Yup
+- MUI
+- MUI Icons
+- React Router Dom
 
-<br />
-
-## Lint : Development
-
-To lint application source code using ESLint via this command :
-
-```bash
-yarn lint
-```
-
-<br />
-
-## Build : Production
-
-Distribution files output will be generated in `dist/` directory by default.
-
-To build the production ready files for distribution, use the following command :
-
-```bash
-yarn build
-```
-
-<br />
-
-## Serve : Production
-
-Serve helps you serve a static site, single page application or just a static file. It also provides a neat interface for listing the directory's contents. This command serves build files from `dist/` directory.
-
-```bash
-yarn serve
-```
-
-<br />
-
-## Webpack Configurations
-
-To make it easier for managing environment based webpack configurations, we using separated `development` and `production` configuration files, they are available in :
-
-```bash
-# Development webpack config
-tools/webpack/webpack.config.dev.js
-
-# Production webpack config
-tools/webpack/webpack.config.prod.js
-```
-
-For further information, you can visit [Webpack Configuration](https://webpack.js.org/configuration/)
+### This project was created by Michal Beblocinski
