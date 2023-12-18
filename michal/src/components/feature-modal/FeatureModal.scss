@@ -20,9 +20,6 @@
   .landing-page__features-choices-photo::before {
     z-index: -1;
 
-    @media only screen and (min-width: 780px) {
-    }
-
     @media only screen and (max-width: 780px) {
       left: -40vw;
     }

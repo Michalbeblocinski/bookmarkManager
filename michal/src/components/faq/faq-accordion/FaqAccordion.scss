@@ -13,11 +13,6 @@
     margin-top: 25px !important;
   }
 
-  .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded,
-  .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
-    margin: 0 !important;
-  }
-
   > :nth-child(1)::after {
     position: absolute;
     top: -15px;
@@ -38,8 +33,6 @@
       display: none;
     }
   }
-
-
 
   &-accordion::before {
     opacity: 1 !important;
@@ -77,17 +70,6 @@
       padding-right: 10px;
     }
 
-    .Mui-expanded {
-      svg {
-        position: relative;
-        right: 12px;
-        color: $primary-red !important;
-
-        @media only screen and (max-width: 400px) {
-          right: 21px;
-        }
-      }
-    }
 
     &-topography {
       font-weight: 500 !important;

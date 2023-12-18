@@ -19,10 +19,6 @@ body {
     margin-top: 25px !important;
   }
 }
-.landing-page__faq-accordions .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded,
-.landing-page__faq-accordions .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
-  margin: 0 !important;
-}
 .landing-page__faq-accordions > :nth-child(1)::after {
   position: absolute;
   top: -15px;
@@ -70,16 +66,6 @@ body {
   .landing-page__faq-accordions-accordion {
     margin-bottom: 26px;
     padding-right: 10px;
-  }
-}
-.landing-page__faq-accordions-accordion .Mui-expanded svg {
-  position: relative;
-  right: 12px;
-  color: hsl(0, 94%, 66%) !important;
-}
-@media only screen and (max-width: 400px) {
-  .landing-page__faq-accordions-accordion .Mui-expanded svg {
-    right: 21px;
   }
 }
 .landing-page__faq-accordions-accordion-topography {
