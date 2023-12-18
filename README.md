@@ -24,7 +24,7 @@ To get started with BookmarkMangar, follow these simple steps:
    npm start
    ```
 
-This will open the project in your default web browser. If it doesn't, you can visit [http://localhost:8080](http://localhost:3000) in your browser.
+This will open the project in your default web browser. If it doesn't, you can visit [http://localhost:8080](http://localhost:8080) in your browser.
 
 ### Folder Structure
 
