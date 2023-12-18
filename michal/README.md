@@ -43,8 +43,6 @@ This will open the project in your default web browser. If it doesn't, you can v
 - SCSS
 - Formik
 - Yup
-- MUI
-- MUI Icons
 - React Router Dom
 
 ### This project was created by Michal Beblocinski
