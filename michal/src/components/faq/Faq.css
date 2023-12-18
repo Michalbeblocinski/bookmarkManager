@@ -59,7 +59,7 @@ body {
   background-color: hsl(231, 69%, 60%);
   color: white;
   border: none;
-  margin: 52px 0 129px calc(50% - 49px);
+  margin: 38px 0 129px calc(50% - 49px);
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
@@ -76,7 +76,7 @@ body {
 }
 @media only screen and (max-width: 400px) {
   .landing-page__faq-button {
-    margin: 42px 0 87px calc(50% - 47px);
+    margin: 31px 0 87px calc(50% - 47px);
   }
 }
 .landing-page__faq-button:hover {
