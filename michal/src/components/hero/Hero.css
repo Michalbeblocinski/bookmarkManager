@@ -256,7 +256,7 @@ body {
 @media only screen and (max-width: 450px) {
   .landing-page__hero-photo::before {
     top: 46px;
-    right: -30px;
+    right: -28px;
     width: 84vw;
     height: 52vw;
     border-radius: 0 0 0 111px;

@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div className={'test'}>
+        <div className={''}>
           <div className='landing-page__hero-info-buttons'>
             <button className='landing-page__hero-info-buttons-button landing-page__hero-info-buttons-button--left'>
               Get it on Chrome
