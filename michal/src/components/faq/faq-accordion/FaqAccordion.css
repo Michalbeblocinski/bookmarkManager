@@ -78,7 +78,7 @@ body {
     font-size: 16px !important;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .landing-page__faq-accordions-accordion-topography {
     font-size: 13px !important;
     padding: 10px 7px 5px 0 !important;
